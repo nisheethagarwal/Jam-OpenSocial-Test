@@ -5,7 +5,11 @@
 	</ModulePrefs>
 	<Content type="html">
 		<![CDATA[
-			Testing, 1, 2, 3, testing!
+			<div id="app">
+				<div id="header"><h4>OpenSocial Basic</h4></div>
+				<div id="body"></div>
+				<div id="footer"></div>
+			</div>
 		]]>
 	</Content>
 </Module>
