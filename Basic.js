@@ -54,8 +54,6 @@ function renderInfo() {
     html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
     document.getElementById('footer').innerHTML = html;
     
-    /** Adjust window size dynamically */
-    gadgets.window.adjustHeight();
     }
 
 // Sets callbacks
