@@ -46,8 +46,6 @@ function renderInfo() {
     var notes = toObject(state.get('notes','[]'));
     var imp = toObject(state.get('imp','[]'));
     
-    alert(notes);
-    
     /** Add topics to the canvas */
     var html = "";
     for (var i = 0; i < notes.length; i++){
