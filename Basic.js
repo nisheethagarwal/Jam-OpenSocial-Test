@@ -52,6 +52,8 @@ function renderInfo() {
         var id = "note"+i;
         html += '<div class="note"><h4> ' + notes[i] + '</h4></div>';
     }
+    
+    html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
     document.getElementById('body').innerHTML = html;
     /** Create "Add topic" button to the footer */
     html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
