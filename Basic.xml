@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!-- Test_Gadget (XML) -->
 <Module>
-	<ModulePrefs title="Test_Gadget">
+	<ModulePrefs title=""Test_Gadget"Notes">
 	<Require feature="wave"/>
 	<Require feature="dynamic-height"/>
 	</ModulePrefs>
