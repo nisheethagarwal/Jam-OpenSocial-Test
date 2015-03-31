@@ -1,9 +1,4 @@
-/**
- * STEP 2 (Implementing the "Add Topic" button)
- * - Encode object as JSON string -> toJSON(obj)
- * - Decode JSON string into an object -> toObject(str)
- * - Stores data in the OpenSocial gadget -> addInput()
- */
+
 
 /** Encode object as JSON string */
 function toJSON(obj) { 
@@ -21,31 +16,23 @@ function addInput(){
 	var state = wave.getState();
 	
 	// Retrieves topics from storage.
-	var jsonString = state.get('topics','[]');
+	var jsonString = state.get('notes','[]');
 	
 	// Converts JSON to an array of topics
-	var topics = toObject(jsonString);
+	var notes = toObject(jsonString);
 	
 	// Push textbox value into the array and set the textbox to blank
-	topics.push(document.getElementById('textBox').value);
+	notes.push(document.getElementById('textBox').value);
 	document.getElementById('textBox').value = '';
 	
 	// Create an array for the topic and add it to the "master" array.
-	var votes = toObject(state.get('votes','[]'));
-	votes.push(new Array());
+	var imp = toObject(state.get('imp','[]'));
+	imp.push(new Array());
 	
 	// Submit everything to storage
-	state.submitDelta({'topics' : toJSON(topics), 'votes' : toJSON(votes)});
+	state.submitDelta({'notes' : toJSON(notes), 'imp' : toJSON(imp)});
 }
 
-/** 
- * STEP 3 (Rendering topics)
- * - Get state
- * - Retrieve topics
- * - Add topics to the canvas
- * - Create "Add topic" button to the footer
- * - Adjust window size dynamically
- */
 
 // Renders the gadget
 function renderInfo() {
@@ -56,19 +43,19 @@ function renderInfo() {
     var state = wave.getState();
     
     /** Retrieve topics */
-    var topics = toObject(state.get('topics','[]'));
-    var votes = toObject(state.get('votes','[]'));
+    var notes = toObject(state.get('notes','[]'));
+    var imp = toObject(state.get('imp','[]'));
     
     /** Add topics to the canvas */
     var html = "";
-    for (var i = 0; i < topics.length; i++){
-        var id = "topic"+i;
-        html += '<div class="topic"><h4> ' + topics[i] + '</h4></div>';
+    for (var i = 0; i < notes.length; i++){
+        var id = "note"+i;
+        html += '<div class="note"><h4> ' + notes[i] + '</h4></div>';
     }
     document.getElementById('body').innerHTML = html;
     
     /** Create "Add topic" button to the footer */
-    html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Topic</button>';
+    html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
     document.getElementById('footer').innerHTML = html;
     
     /** Adjust window size dynamically */
