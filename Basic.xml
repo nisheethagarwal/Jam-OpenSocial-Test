@@ -7,7 +7,6 @@
 	</ModulePrefs>
 	<Content type="html">
 		<![CDATA[
-			<!-- <script type="text/javascript" src="Basic.js"/> -->
 			
 			<div id="app">
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
