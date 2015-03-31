@@ -46,6 +46,8 @@ function renderInfo() {
     var notes = toObject(state.get('notes','[]'));
     var imp = toObject(state.get('imp','[]'));
     
+    alert(notes);
+    
     /** Add topics to the canvas */
     var html = "";
     for (var i = 0; i < notes.length; i++){
@@ -53,7 +55,6 @@ function renderInfo() {
         html += '<div class="note"><h4> ' + notes[i] + '</h4></div>';
     }
     
-    html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
     document.getElementById('body').innerHTML = html;
     /** Create "Add topic" button to the footer */
     html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
