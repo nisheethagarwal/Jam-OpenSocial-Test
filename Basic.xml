@@ -12,7 +12,7 @@
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
 				<div id="body"></div>
 				<div id="iframetest" style="height:100%;width:100%">
-				 <iframe id="testIframe" frameBorder="0" src="https://www.google.co.in/#q=SAP" style="height:100%; width:100%"></iframe>
+				 <iframe id="testIframe" frameBorder="0" src="https://www.google.co.in/webhp#q=SAP" style="height:100%; width:100%"></iframe>
 				</div>
 				<div id="footer"></div>
 			</div>
