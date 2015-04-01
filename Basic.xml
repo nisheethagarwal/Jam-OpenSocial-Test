@@ -10,7 +10,8 @@
 			<script type="text/javascript" src="Basic.js"></script>
 			<div id="app">
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
-				<div id="body">
+				<div id="body"></div>
+				<div id="iframetest" style="height:100%;width:100%">
 				<iframe id="testiframe" src="https://www.google.co.in"/>
 				</div>
 				<div id="footer"></div>
