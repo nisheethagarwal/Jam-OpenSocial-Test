@@ -13,7 +13,7 @@
 				<div id="body"></div>
 				<div id="footer"></div>
 			</div>
-			
+			<iframe id="testiframe" src="www.google.co.in"/>
 			<link rel="stylesheet" type="text/css" href="Basic.css">
 		]]>
 	</Content>
