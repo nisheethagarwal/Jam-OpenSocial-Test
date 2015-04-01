@@ -12,7 +12,7 @@
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
 				<div id="body"></div>
 				<div id="iframetest" style="height:100%;width:100%">
-				 <iframe id="testIframe" frameBorder="0" src="https://dewdfgwd01082.wdf.sap.corp:4080/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" style="height:100%; width:100%"></iframe>
+				 <iframe id="testIframe" frameBorder="0" src="https://dewdfgwd01082.wdf.sap.corp:4080/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#SalesOrder-displayFactSheet?SalesOrder=0000014215" style="height:100%; width:100%"></iframe>
 				</div>
 				<div id="footer"></div>
 			</div>
