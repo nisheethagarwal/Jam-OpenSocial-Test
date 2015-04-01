@@ -42,7 +42,7 @@ function renderInfo() {
     }
     var state = wave.getState();
     /*
-    /** Retrieve topics */
+    /** Retrieve topics 
     var notes = toObject(state.get('notes','[]'));
     var imp = toObject(state.get('imp','[]'));
     */
