@@ -11,8 +11,8 @@
 			<div id="app">
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
 				<div id="body"></div>
-				<div id="iframetest" style="height:10%;width:10%">
-				<iframe id="testiframe" src="https://www.google.co.in"/>
+				<div id="iframetest" style="height:100%;width:100%">
+				 <iframe id="mapIframe" frameBorder="0" src="http://maps.google.com/maps?z=8&t=m&output=embed&q=israel" style="height:100%; width:100%"></iframe>
 				</div>
 				<div id="footer"></div>
 			</div>
