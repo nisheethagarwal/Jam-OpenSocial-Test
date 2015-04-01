@@ -36,7 +36,7 @@ function addInput(){
 
 // Renders the gadget
 function renderInfo() {
-    /** Get state */
+    /** Get state 
     if (!wave.getState()) {
         return;
     }
