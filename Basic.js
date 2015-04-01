@@ -48,7 +48,7 @@ function renderInfo() {
     
     /** Add topics to the canvas */
     var html = "";
-    
+    html = document.getElementById('body').innerHTML;
     for (var i = 0; i < notes.length; i++){
         var id = "note"+i;
         html += '<div class="note"><h4> ' + notes[i] + '</h4></div>';
