@@ -11,9 +11,9 @@
 			<div id="app">
 				<div id="header"><h4>OpenSocial Notes Test</h4></div>
 				<div id="body"></div>
+				<iframe id="testiframe" src="http://www.google.co.in"/>
 				<div id="footer"></div>
 			</div>
-			<iframe id="testiframe" src="www.google.co.in"/>
 			<link rel="stylesheet" type="text/css" href="Basic.css">
 		]]>
 	</Content>
