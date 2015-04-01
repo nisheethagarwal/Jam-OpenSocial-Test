@@ -41,18 +41,19 @@ function renderInfo() {
         return;
     }
     var state = wave.getState();
-    
+    /*
     /** Retrieve topics */
     var notes = toObject(state.get('notes','[]'));
     var imp = toObject(state.get('imp','[]'));
-    
+    */
     /** Add topics to the canvas */
     var html = "";
+    /*
     for (var i = 0; i < notes.length; i++){
         var id = "note"+i;
         html += '<div class="note"><h4> ' + notes[i] + '</h4></div>';
     }
-    
+    */
     document.getElementById('body').innerHTML = html;
     /** Create "Add topic" button to the footer */
     html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Note</button>';
